@@ -14,14 +14,14 @@ class LocationData:
 		self.location_id: int = location_id + base_location_id
 
 location_table = {
-	#Foundry level 00
+		#Foundry level 00
 	"Foundry High Score": LocationData("Foundry", "Foundry High Score", 0x10),
 	"Foundry Pro Score": LocationData("Foundry", "Foundry Pro Score", 0x11),
 	"Foundry Sick Score": LocationData("Foundry", "Foundry Sick Score", 0x12),
 	"Foundry SKATE": LocationData("Foundry", "Foundry SKATE", 0x13),
 	"Foundry Valves": LocationData("Foundry", "Foundry Valves", 0x14),
 	"Foundry Press": LocationData("FoundryGrind", "Foundry Press", 0x15),
-	"Foundry Cannonball": LocationData("FoundryCannonball", "Foundry Cannonball", 0x16),
+	"Foundry Cannonball Over Halfpipe": LocationData("FoundryCannonball", "Foundry Cannonball Over Halfpipe", 0x16),
 	"Foundry Control Booth": LocationData("FoundryGrind", "Foundry Control Booth", 0x17),
 	"Foundry Secret Tape": LocationData("Foundry", "Foundry Secret Tape", 0x18),
 	"Foundry 100 Percent": LocationData("FoundryFinal", "Foundry 100 Percent", 0x19),
@@ -31,6 +31,35 @@ location_table = {
 	"Foundry SP Right Pipe": LocationData("Foundry", "Foundry SP Right Pipe", 0x1D),
 	"Foundry SP Back Door": LocationData("Foundry", "Foundry SP Back Door", 0x1E),
 	"Foundry Deck": LocationData("Foundry", "Foundry Deck", 0x1F),
+		#Los Angeles level 01
+	"LA High Score": LocationData("LA", "LA High Score", 0x20),
+	"LA Pro Score": LocationData("LA", "LA Pro Score", 0x21),
+	"LA Sick Score": LocationData("LA", "LA Sick Score", 0x22),
+	"LA SKATE": LocationData("LA", "LA SKATE", 0x23),
+	"LA Transformers": LocationData("LA", "LA Transformers", 0x24),
+	"LA Electric Rail": LocationData("LAGrind", "LA Electric Rail", 0x25),
+	"LA Elevator Grind": LocationData("LAGrind", "LA Elevator Grind", 0x26),
+	"LA Kickflip Over Lobby": LocationData("LAKickflip", "LA Kickflip Over Lobby", 0x27),
+	"LA Secret Tape": LocationData("LA", "LA Secret Tape", 0x28),
+	"LA 100 Percent": LocationData("LAFinal", "LA 100 Percent", 0x29),
+	"LA SP Quarterpipe Powerline": LocationData("LA", "LA Quarterpipe Powerline", 0x2A),
+	"LA SP Highway": LocationData("LA", "LA Highway", 0x2B),
+	"LA SP Theater": LocationData("LA", "LA Theater", 0x2C),
+	"LA SP 4": LocationData("LA", "LA SP 4", 0x2D), #need better name
+	"LA SP 5": LocationData("LA", "LA SP 5", 0x2E), #need better name
+	"LA Deck": LocationData("LA", "LA Deck", 0x2F),
+		#Rio de Janeiro level 02
+	"Rio Medal": LocationData("Rio", "Rio Medal", 0x30),
+	#"Rio Silver": LocationData("Rio", "Rio Silver", 0x31),
+	#"Rio Gold": LocationData("Rio", "Rio Gold", 0x32),
+	"Rio SP Quicksilver Powerline": LocationData("Rio", "Rio SP Quicksilver Powerline", 0x3A),
+	"Rio SP Quicksilver": LocationData("Rio", "Rio SP Quicksilver", 0x3B),
+	"Rio SP Middle Powerline": LocationData("Rio", "Rio SP Middle Powerline", 0x3C),
+	"Rio SP Alley": LocationData("Rio", "Rio SP Alley", 0x3D),
+	"Rio SP Balcony": LocationData("Rio", "Rio SP Balcony", 0x3E),
+	"Rio Deck": LocationData("Rio", "Rio Deck", 0x3F)#,
+	#REMEMBER TO UNCOMMENT THE COMMA
+}
 
 location_descriptions = {
     "Foundry High Score": "High Score of 10,000 points in Foundry",
