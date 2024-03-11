@@ -14,8 +14,14 @@ class ItemData:
         self.table_index = id
 
 item_table = {
-	"Level Key": ItemData(0x10, ItemClassification.progression),	#need  8
+	"Level Key": ItemData(0x0F, ItemClassification.progression),	#need  8
+	#Goals will be pre-filled
+	"Goal Point": ItemData(0x10, ItemClassification.progression),	#need 50
 	"Stat Point": ItemData(0x11, ItemClassification.useful),		#need 50
+	#Medals will be pre-filled
+	"Medal": ItemData(0x12, ItemClassification.progression),		#need 3
+	#Pre-filled for 3 Gold Victory
+	#"Gold Medal": ItemData(0x14, ItemClassification.progression),	#need 3
 	"Deck": ItemData(0x3C, ItemClassification.filler),				#need  7
 	"Gymnast Plant": ItemData(0xB4, ItemClassification.filler),
 	"Eggplant": ItemData(0xB5, ItemClassification.filler),
@@ -52,7 +58,7 @@ item_table = {
 	"Double Kickflip to Indy": ItemData(0xE1, ItemClassification.useful),
 	"The Fandangle II": ItemData(0xE2, ItemClassification.useful),
 	"Hang Ten": ItemData(0xE3, ItemClassification.useful),
-	"Trap": ItemData(0xF0, ItemClassification.trap)
+	"Wireframe Trap": ItemData(0xF0, ItemClassification.trap)
 }
 
 event_table = {
