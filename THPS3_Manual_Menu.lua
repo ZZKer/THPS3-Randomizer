@@ -217,7 +217,7 @@ function gameloop()
 	-- If not currently skating
 	if memory.readbyte(stateadd) == 0 or memory.readbyte(pauseadd) == 1 then
 		-- Set level correctly (need to fix up in future)
-		if memory.readbyte(stateadd) == 0 and levelchoice < maxLevel and not (memory.readbyte(leveladd2) == levelchoice) then
+		if memory.readbyte(stateadd) == 0 and levelchoice < maxLevel and (memory.readbyte(leveladd1) ~= levelchoice or memory.readbyte(leveladd2) ~= levelchoice) then
 			memory.writebyte(leveladd1, levelchoice)
 			memory.writebyte(leveladd2, levelchoice)
 		end
